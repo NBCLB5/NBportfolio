@@ -115,16 +115,18 @@
   /* Welcome section */
   
   .welcome-section {
+    
     display: flex;
     font-family: "raleway", serif;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 75vh;
     padding: 100px 40px 40px;
     background-color: #000;
     background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    color:cornsilk;
   }
   
   .welcome-section > p {
@@ -140,12 +142,13 @@
     text-align: center;
     padding: 10rem 2rem;
     background: var(--main-blue);
+    color: beige;
   }
   
   .projects-section-header {
     max-width: 640px;
     margin: 0 auto 6rem auto;
-    border-bottom: 0.2rem solid var(--main-white);
+    border-bottom: 0.2rem solid var(--main-navy);
   }
   
   @media (max-width: 28.75em) {
@@ -159,7 +162,7 @@
     grid-gap: 4rem;
     width: 100%;
     max-width: 250px;
-    margin: auto;
+    margin: 0 auto;
     margin-bottom: 6rem;
   }
   
@@ -176,7 +179,7 @@
   .project {
     background: var(--main-gray);
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
+    border-radius: 50px;
   }
   
   .code {
@@ -191,12 +194,15 @@
   .project-image {
     height: calc(100% - 6.8rem);
     width: 100%;
-    object-fit: cover;
+    object-fit: scale-down;
+    border-radius: 50px;
+    padding-top: 10px;
   }
   
   .project-title {
     font-size: 2rem;
     padding: 1rem 2rem;
+    color: cornsilk;
   }
   
   .btn {
@@ -233,17 +239,18 @@
     justify-content: center;
     align-items: center;  
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     padding: 100px 40px 40px;
     background-color: #000;
     background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    color: cornsilk;
   }
   
   .contact-section-header > h2 {
     font-size: 3rem;
     font-weight: 200;
     font-style: italic;
-    color: var(--main-white);
+    color: cornsilk;
     font-family: "raleway", serif;
   }
   
@@ -264,12 +271,14 @@
     max-width: 980px;
     margin-top: 4rem;
     flex-wrap: wrap;
+    color: cornsilk;
   }
   
   .contact-details {
     font-size: 2.4rem;
     text-shadow: 2px 2px 1px #1f1f1f;
     transition: transform 0.3s ease-out;
+    color: cornsilk;
   }
   
   .contact-details:hover {
@@ -277,14 +286,14 @@
   }
   
   /* Footer */
-  
   footer {
     font-weight: 300;
     display: flex;
     justify-content: space-evenly;
     padding: 2rem;
-    background: var(--main-blue);
+    background: var(--main-navy);
     border-top: 4px solid var(--main-navy);
+
   }
   
   footer > p {
@@ -326,3 +335,5 @@
         pointer-events: auto;
         opacity: 1;
     }
+
+   
