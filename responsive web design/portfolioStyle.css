@@ -122,7 +122,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 75vh;
+    height: 50vh;
     padding: 100px 40px 40px;
     background-color: #000;
     background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
@@ -146,9 +146,8 @@
   }
   
   .projects-section-header {
-    max-width: 640px;
-    margin: 0 auto 6rem auto;
-    border-bottom: 0.2rem solid var(--main-navy);
+    max-width: auto;
+    margin: 0 auto 30px auto;
   }
   
   @media (max-width: 28.75em) {
@@ -158,19 +157,15 @@
   }
   .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 4rem;
-    width: 100%;
-    max-width: 250px;
-    margin: 0 auto;
-    margin-bottom: 6rem;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+    padding: 10px;
   }
   
   @media (max-width: 30.625em) {
     .projects-section {
       padding: 6rem 1rem;
-    }
-  
+    }    
     .projects-grid {
       grid-template-columns: 1fr;
     }
@@ -186,10 +181,10 @@
     color: var(--main-gray);
     transition: color 0.3s ease-out;
   }
-  
+  /*
   .project:hover .code {
     color: #ff7f50;
-  }
+  }*/
   
   .project-image {
     height: calc(100% - 6.8rem);
@@ -285,6 +280,33 @@
     transform: translateY(8px);
   }
   
+
+  /* back to the top */
+  .to-top{
+    background-color: blanchedalmond;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: black;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+    }
+
+    .to-top.active{
+        bottom: 32px;
+        pointer-events: auto;
+        opacity: 1;
+    }
+
   /* Footer */
   footer {
     font-weight: 300;
@@ -309,31 +331,6 @@
       flex-direction: column;
       text-align: center;
     }
-
   }
-  .to-top{
-    background-color: whitesmoke;
-    position: fixed;
-    bottom: 16px;
-    right: 32px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 32px;
-    color: black;
-    text-decoration: none;
-    opacity: 0;
-    pointer-events: none;
-    transition: all .4s;
-    }
 
-    .to-top.active{
-        bottom: 32px;
-        pointer-events: auto;
-        opacity: 1;
-    }
-
-   
+  
