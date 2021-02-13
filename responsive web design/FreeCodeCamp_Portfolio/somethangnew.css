@@ -1,0 +1,124 @@
+:root {
+    --main-white: #f9f9f9;
+    --main-navy: #001431;
+    --main-blue: #808080;
+    --main-gray: #303841;
+    --main-red: #660000;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+ html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Raleway", serif;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.4;
+    color: black;
+  }
+
+h2 {
+    font-size: 4.2rem;
+    font-family: "raleway", serif;
+  }
+
+
+ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--main-white);
+  }
+
+/* nav */
+  
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--main-navy);
+    z-index: 10;
+    color: white
+  }
+  
+    @media (max-width: 28.75em) {
+    .nav {
+      justify-content: auto;
+    }
+  
+  .nav-list a:hover {
+    background: var(--main-blue);
+    border-radius: 25%;
+  }
+
+  
+
+
+
+
+
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  
+  /* nav */
+  
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--main-navy);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    z-index: 10;
+  }
+  
+  
