@@ -1,97 +1,153 @@
 <!DOCTYPE html>
 <html>
+
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="somethangnew.css">
 
-<style>
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-}
+        <style>
+            .accordion {
+                background-color: #eee;
+                color: #444;
+                cursor: pointer;
+                padding: 18px;
+                width: 100%;
+                border: solid;
+                text-align: left;
+                outline: none;
+                font-size: 15px;
+                transition: 0.4s;
+                border-radius: 60px;
+                margin: 15px;
+            }
 
-.active, .accordion:hover {
-  background-color: #ccc;
-}
+            .active,
+            .accordion:hover {
+                background-color: #ccc;
+            }
 
-.accordion:after {
-  content: '\002B';
-  color: #777;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
+            .accordion:after {
+                content: '\002B';
+                color: #777;
+                font-weight: bold;
+                float: right;
+                margin-left: 5px;
+                padding-top: 75px;
 
-.active:after {
-  content: "\2212";
-}
+            }
 
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-</style>
-</head>
-<nav id="navbar" class="nav">
-    <h2>FreeCodeCamp pages</h2>
-    <ul class="nav-list">
-        <li>
-            <a href="#projects">Projects</a>
-        </li>
-        <li>
-            <a href="#contact">Contact</a>
-        </li>
-    </ul>
-</nav>
-<body>
+            .active:after {
+                content: "\2212";
+            }
 
-<h2>FreeCodeCamp pages</h2>
-<p>Click the image to be take to the project page or the "plus" for an ABOUT and a link to the code.</p>
-<button class="accordion"><img src="images/KirbyPuckett.jpg"> Kirby Puckett Tribute Page</button>
-<div class="panel">
-   <p>what did I like and what was new or hard
-    <a href="https://github.com/NBCLB5/NBportfolio/blob/main/responsive%20web%20design/portfolioIndex.html"
-    class="#" target="_blank">View code here <i class="fas fa-code"></i></a>
-   </p>
-</div>
+            .panel {
+                padding: 0 18px;
+                background-color: white;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.2s ease-out;
+            }
 
-<button class="accordion">Section 2</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
+            .img {
+                border-radius: 80%;
+                height: 170px;
+                width: 160px;
+                border: solid;
+            }
 
-<button class="accordion">Section 3</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
+            .info {
+                padding: 100px;
+                font-size: 15px;
+                font-family: "ralewy"serif;
+                font-weight: 60px;
+                color: black;
+            }
 
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
+        </style>
+    </head>
+    <nav id="navbar" class="nav">
+        <h2>FreeCodeCamp pages</h2>
+        <ul class="nav-list">
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
-</script>
+    <body>
 
-</body>
+        <h2>FreeCodeCamp pages</h2>
+        <p>Click the image to be take to the project page or the "plus" for an ABOUT and a link to the code.</p>
+        <!--kirby puckett-->
+        <button class="accordion"><img class="img" src="images/KirbyPuckett.jpg"> <a class="info">Kirby Puckett Tribute
+                Page</a></button>
+        <div class="panel">
+            <p>what did I like and what was new or hard
+                <a href="https://github.com/NBCLB5/NBportfolio/tree/main/responsive%20web%20design/FreeCodeCamp_Portfolio/FCC%20tribute"
+                    class="#" target="_blank">View code here <i class="fas fa-code"></i></a>
+            </p>
+        </div>
+        <!--Ice Cream-->
+        <button class="accordion"><img class="img" src="images/icecream.jpg"> Kirby Puckett Tribute Page</button>
+        <div class="panel">
+            <p>what did I like and what was new or hard
+                <a href="https://github.com/NBCLB5/NBportfolio/tree/main/responsive%20web%20design/FreeCodeCamp_Portfolio/FCC%20Survey"
+                    class="#" target="_blank">View code here <i class="fas fa-code"></i></a>
+            </p>
+        </div>
+        <!--Tech Doc-->
+        <button class="accordion"><img class="img" src="images/img_css.jpg"> Kirby Puckett Tribute Page</button>
+        <div class="panel">
+            <p>what did I like and what was new or hard
+                <a href="https://github.com/NBCLB5/NBportfolio/tree/main/responsive%20web%20design/FreeCodeCamp_Portfolio/FCC%20Technical%20Documentation"
+                    class="#" target="_blank">View code here <i class="fas fa-code"></i></a>
+            </p>
+        </div>
+        <!--Bee 101-->
+        <button class="accordion"><img class="img" src="images/bee101.jpg"> Kirby Puckett Tribute Page</button>
+        <div class="panel">
+            <p> This was a project for Free Code Camp. I enjoyed creating this page. I focused on the navigation bar and
+                scrolling mostly on this project. I had a hard time debugging the responsive aspects of the page to load
+                correctly in a mobile view of the page. However, after debugging it for some time it felt good to have
+                the page resize on different devices and still have the same design wanted.
+                <a href="https://github.com/NBCLB5/NBportfolio/tree/main/responsive%20web%20design/FreeCodeCamp_Portfolio/FCC%20BEE"
+                    class="#" target="_blank">View code here <i class="fas fa-code"></i></a>
+            </p>
+        </div>
+        <!--B5honey-->
+        <button class="accordion"><img class="img" src="images/b5honey.jpg"> Kirby Puckett Tribute Page</button>
+        <div class="panel">
+            <p>I created this page for a Free Code Camp project. This is one of my favorite pages I have created because
+                I actual want to be a beekeeper in Chiloe Chile. I really enjoyed making the Logo and adding design with
+                CSS. I would like to add to this page later to make it more functional like creating a shopping cart and
+                checkout link. This will prepare me for my future hobby of beekeeping. I plan to use this web page as a
+                functional page for myself in the future.
+                <a href="https://github.com/NBCLB5/NBportfolio/tree/main/responsive%20web%20design/FreeCodeCamp_Portfolio/FCC%20Product%20Landing"
+                    class="#" target="_blank">View code here <i class="fas fa-code"></i></a>
+            </p>
+        </div>
+
+
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+
+    </body>
+
 </html>
