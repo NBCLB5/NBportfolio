@@ -2,71 +2,18 @@
 <html>
 
     <head>
+        <script src="https://kit.fontawesome.com/0777d29f2c.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="somethangnew.css">
 
         <style>
-            .accordion {
-                background-color: #eee;
-                color: #444;
-                cursor: pointer;
-                padding: 18px;
-                width: 100%;
-                border: solid;
-                text-align: left;
-                outline: none;
-                font-size: 15px;
-                transition: 0.4s;
-                border-radius: 60px;
-                margin: 15px;
-            }
 
-            .active,
-            .accordion:hover {
-                background-color: #ccc;
-            }
-
-            .accordion:after {
-                content: '\002B';
-                color: #777;
-                font-weight: bold;
-                float: right;
-                margin-left: 5px;
-                padding-top: 75px;
-
-            }
-
-            .active:after {
-                content: "\2212";
-            }
-
-            .panel {
-                padding: 0 18px;
-                background-color: white;
-                max-height: 0;
-                overflow: hidden;
-                transition: max-height 0.2s ease-out;
-            }
-
-            .img {
-                border-radius: 80%;
-                height: 170px;
-                width: 160px;
-                border: solid;
-            }
-
-            .info {
-                padding: 100px;
-                font-size: 15px;
-                font-family: "ralewy"serif;
-                font-weight: 60px;
-                color: black;
-            }
 
         </style>
+
     </head>
     <nav id="navbar" class="nav">
-        <h2>FreeCodeCamp pages</h2>
+        <title>FreeCodeCamp</title>
         <ul class="nav-list">
             <li>
                 <a href="#projects">Projects</a>
@@ -79,8 +26,12 @@
 
     <body>
 
-        <h2>FreeCodeCamp pages</h2>
-        <p>Click the image to be take to the project page or the "plus" for an ABOUT and a link to the code.</p>
+        <div id="projects" class="projects-section">
+            <h4 class="projects-section-header">Click the image to be take to the project page or the "plus" for an
+                ABOUT and a link to the code.</h4>
+        </div>
+        
+
         <!--kirby puckett-->
         <button class="accordion"><img class="img" src="images/KirbyPuckett.jpg"> <a class="info">Kirby Puckett Tribute
                 Page</a></button>
@@ -147,7 +98,52 @@
                 });
             }
         </script>
+ <!-- START CONTACT SECTION -->
 
+        <section id="contact" class="contact-section">
+            <div class="contact-section-header">
+                <h2>I am looking forward to working with you.</h2>
+            </div>
+
+            <div class="contact-links">
+                <!--resume-->
+                <a href="Nathan-Banek-Resume 2020 -I.pdf" class="btn contact-details" target="_blank">
+                    <i class=""></i></a>
+                <!--Email-->
+                <a href="mailto:nbanek10@gmail.com" class="btn contact-details" target="_blank">
+                    <i class="fas fa-envelope"></i></a>
+                <!--Telephone-->
+                <a href="tel:720-688-5536" class="btn contact-details" target="_blank">
+                    <i class="fas fa-phone-square-alt"></i></a>
+                <!--github-->
+                <a href="https://github.com/NBCLB5" class="btn contact-details" target="_blank">
+                    <i class="fab fa-github"></i></a>
+                <!--freecodecamp-->
+                <a href="https://www.freecodecamp.org/nbanek" class="btn contact-details" target="_blank">
+                    <i class="fab fa-free-code-camp"></i></a>
+                <!--codepen-->
+                <a href="https://codepen.io/NBanek/collections/public" class="btn contact-details" target="_blank">
+                    <i class="fab fa-codepen"></i></a>
+                <!--Linkin-->
+                <a href="https://www.linkedin.com/in/nathan-banek-187858196/" class="btn contact-details"
+                    target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+
+        </section>
+
+        <!-- END CONTACT SECTION -->
+        <!--back to the top button-->
+        <a href="#" class="to-top">
+            <i class="far fa-arrow-alt-circle-up"></i>
+        </a>
+        <script src="main.js"></script>
     </body>
+    <footer class="footer">
+        Created by Nathan Banek
+        <!--code icon -->
+        <a href="https://github.com/NBCLB5/NBportfolio/blob/main/responsive%20web%20design/portfolioIndex.html"
+            class="#" target="_blank">View code here <i class="fas fa-code"></i></a>
+    </footer>
+
 
 </html>
