@@ -32,8 +32,7 @@ h2 {
     font-size: 4.2rem;
     font-family: "raleway", serif;
     text-align: left;
-  
-  }
+    }
 
 
 ul {
@@ -42,7 +41,8 @@ ul {
   
   a {
     text-decoration: none;
-    color: var(--main-white);
+    color: cornsilk;
+    text-align:center;
   }
   
 /* nav */
@@ -87,8 +87,9 @@ ul {
 }
 
 .nav-title{
-  text-align: left;
-  position: relative;
+  padding-right: 850px;
+  padding-top: 10px;
+  color:cornsilk;
 }
 
 
@@ -100,8 +101,9 @@ ul {
     cursor: pointer;
     padding: 18px;
     width: 100%;
+    height: auto;
     border: solid;
-    text-align: left;
+    text-align: justify;
     outline: none;
     font-size: 15px;
     transition: 0.4s;
@@ -131,28 +133,36 @@ ul {
   
   .panel {
     padding: 0 18px;
-    background-color: rgb(89, 145, 92);
+    background-color: rgb(194, 206, 195);
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     border-radius: 60px;
+    text-align: justify;
 }  
   
 .img {
     border-radius: 80%;
-    height: 170px;
-    width: 160px;
+    height: 150px;
+    width: 140px;
     border: solid;
+
 }
 
 .info {
-    padding: 100px;
-    font-size: 15px;
+    padding-left: 100px;
+    font-size: 45px;
     font-family: "ralewy"serif;
-    font-weight: 60px;
+    font-weight: bold;
     color: black;
 }
 
+.pro-link{
+  text-align: center;
+  color:black;
+  position: center;
+  padding-left: 500px;
+}
 
 
 .projects-section {
@@ -212,8 +222,8 @@ ul {
   margin-top: 4rem;
   flex-wrap: wrap;
   color: cornsilk;
-  
 }
+
 
 .contact-details {
   font-size: 2.4rem;
